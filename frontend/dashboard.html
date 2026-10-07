@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Proctor Dashboard</title>
+</head>
+<body>
+<h2>Live AI Proctoring Dashboard</h2>
+<pre id="data"></pre>
+
+<script>
+setInterval(async () => {
+  const res = await fetch("http://127.0.0.1:8000/status");
+  const data = await res.json();
+  document.getElementById("data").innerText =
+    JSON.stringify(data, null, 2);
+}, 1000);
+</script>
+</body>
+</html>

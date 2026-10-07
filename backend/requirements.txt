@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+numpy
+fastapi
+uvicorn
+sounddevice
+scipy
+matplotlib
+fpdf
